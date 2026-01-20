@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Library</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body
+ data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+
+    <!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark gm-navbar fixed-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="gmlibrary.png" alt="GM Library" height="40" class="me-2">
+     
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#gmNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="gmNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center ">
+
+        <li class="nav-item">
+          <a class="nav-link active " href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#zones">Zones</a>
+        </li>
+
+       <li class="nav-item">
+  <a class="nav-link" href="#notices">Notice</a>
+</li>
+
+
+        <!-- Login Button -->
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-outline-light border-2 text-white btn-sm px-3 gm-login-btn" href="#login">
+            <i class="bi bi-box-arrow-in-right"></i> Login
+          </a>
+        </li>
+
+      
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ================= ADMISSION FLOAT BUTTON ================= -->
+<a href="#admission" class="admission-btn">
+  <i class="bi bi-pencil-square"></i> Admission Now
+</a>
+
+
+<!-- ================= MAIN AD SLIDER ================= -->
+<div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+        
+      <img src="book2.jpg" class="d-block w-100 slider-img">
+    </div>
+    <div class="carousel-item">
+      <img src="book5.jpg" class="d-block w-100 slider-img">
+    </div>
+  </div>
+</div>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee">
+  <span>📢 New Admissions Open | Free Trial Available | Silent Study Zone | 24x7 Power Backup</span>
+</div>
+
+<!-- ================= NOTICE BOARD ================= -->
+<div id="notices" class="container my-5">
+  <div class="notice-board">
+    <h4><i class="bi bi-megaphone"></i> Notice Board</h4>
+    <ul>
+      <li>📌 Library timing: 6 AM – 11 PM</li>
+      <li>📌 New batch starts from 1st Feb</li>
+      <li>📌 ID card mandatory</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- ================= SECOND AD SLIDER ================= -->
+<div class="container mb-5">
+  <div id="promoSlider"
+       class="carousel slide"
+       data-bs-ride="carousel"
+       data-bs-interval="3000"
+       data-bs-pause="hover">
+
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="book1.jpg" class="d-block w-100 slider-img-sm">
+      </div>
+      <div class="carousel-item">
+        <img src="book4.jpg" class="d-block w-100 slider-img-sm">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#promoSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+
+    <button class="carousel-control-next" type="button" data-bs-target="#promoSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</div>
+
+
+
+<!-- ================= E-NOTES & NEWSPAPER ================= -->
+<div class="container text-center mb-5">
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="feature-card enotes-card">
+
+        <i class="bi bi-journal-text"></i>
+        <h5>E-Notes</h5>
+        <p>Access PDF Notes Anytime</p>
+        <button class="btn btn-primary">Open Notes</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="feature-card newspaper-card">
+
+        <i class="bi bi-newspaper"></i>
+        <h5>Daily Newspaper</h5>
+        <p>Read Today’s News Digitally</p>
+        <button class="btn btn-success">Read Paper</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="gm-footer">
+  <div class="container py-5">
+
+    <div class="row text-center text-md-start">
+
+      <!-- Logo & Social -->
+      <div class="col-md-4 mb-4">
+        <img src="gmlibrary.png" height="70" alt="GM Library">
+        <h6 class="mt-3">FOLLOW US</h6>
+        <div class="footer-social mt-2">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">Quick links</h5>
+        <ul class="footer-links">
+          <li><a href="#zones">Zones</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </div>
+
+    <!-- Contact -->
+<div class="footer-contact-section col-md-4 mb-4">
+  <h5 class="footer-titlee">Contact with Us</h5>
+
+ <p class="footer-contact-item">
+  <i class="bi bi-telephone-fill">
+  <a href="https://wa.me/916200013102" target="_blank" class="footer-whatsapp-link"></i>
+    +91 6200013102
+  </a>
+</p>
+
+  <p class="footer-contact-item">
+    <i class="bi bi-envelope-fill">
+    <a href="mailto:gmlib2025@gmail.com" class="footer-email-link"></i> 
+      gmlib2025@gmail.com
+    </a>
+  </p>
+</div>
+
+
+    </div>
+
+    <hr>
+
+    <!-- Bottom Row -->
+    <div class="footer-bottom text-center">
+      <a href="#">Terms & Conditions</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Refund Policy</a>
+
+      <p class="mt-2">Developed By GM Code Labs</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+
+</html>
