@@ -1,0 +1,117 @@
+/* Container for registration form */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  margin: 0;
+  padding: 0;
+}
+
+/* Center form vertically & horizontally */
+.registration-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form box */
+.registration-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+/* Form title */
+.registration-form h3 {
+  text-align: center;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+/* Labels */
+.registration-form .form-label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #555555;
+}
+
+/* Input fields */
+.registration-form .form-control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.registration-form .form-control:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 8px rgba(255,204,0,0.4);
+}
+
+/* OTP Button */
+#sendOtpBtn {
+  background-color: #ffcc00;
+  border: none;
+  color: #000;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+#sendOtpBtn:hover {
+  background-color: #e6b800;
+}
+
+/* Submit button */
+.registration-form .btn-primary {
+  background-color: #ffcc00;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.registration-form .btn-primary:hover {
+  background-color: #e6b800;
+  color: #000;
+}
+
+/* Optional text / Referral code */
+.registration-form .form-text {
+  font-size: 0.85rem;
+  color: #888888;
+}
+
+/* Input group (OTP) */
+.registration-form .input-group .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.registration-form .input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .registration-form {
+    padding: 25px 20px;
+  }
+
+  .registration-form h3 {
+    font-size: 1.5rem;
+  }
+}

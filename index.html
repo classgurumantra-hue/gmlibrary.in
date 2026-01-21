@@ -9,10 +9,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>  /* Navbar Active Link */
+  .navbar .nav-link.active {
+    color: blue !important;   /* yellow highlight */
+    font-weight: 600;
+  }
+.navbar .nav-link:hover{
+   color: blue 
+}
+  /* Dropdown Active */
+  .dropdown-menu .dropdown-item.active {
+    background-color: #d4b453 !important;
+    color: black !important;
+    font-weight: 600;
+  }
+        .dropdown-menu .dropdown-item:hover {
+  background-color:blue!important; /* light yellow hover */
+  color: white !important;
+}
 
+</style>
 </head>
 <body
  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+ 
+<script>
+document.querySelectorAll('.dropdown-submenu > a').forEach(function(el){
+  el.addEventListener("click", function(e){
+    let next = this.nextElementSibling;
+    if(next && next.classList.contains("dropdown-menu")){
+      e.preventDefault(); 
+      next.style.display = next.style.display === "block" ? "none" : "block";
+    }
+  });
+});
+
+
+
+</script>
+
+
 
     <!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-lg navbar-dark gm-navbar fixed-top">
@@ -37,21 +73,38 @@
           <a class="nav-link active " href="#">Home</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#zones">Zones</a>
+     <li class="nav-item">
+          <a class="nav-link " href="#zone">Zones</a>
         </li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="dashboardDropdown" data-bs-toggle="dropdown">
+    Dashboard
+  </a>
 
-       <li class="nav-item">
-  <a class="nav-link" href="#notices">Notice</a>
+  <ul class="dropdown-menu" aria-labelledby="dashboardDropdown">
+    <li><a class="dropdown-item" href="mycoin.html">My Coins</a></li>
+    <li><a class="dropdown-item" href="mycoupon.html">My Coupon</a></li>
+    <li><a class="dropdown-item" href="#bookinglist">Booking List</a></li>
+    <li><a class="dropdown-item" href="#bookinghistory">Booking History</a></li>
+  </ul>
 </li>
 
 
-        <!-- Login Button -->
+
+<!-- Admission Button (NEW) -->
         <li class="nav-item ms-lg-3">
-          <a class="btn btn-outline-light border-2 text-white btn-sm px-3 gm-login-btn" href="#login">
-            <i class="bi bi-box-arrow-in-right"></i> Login
+          <a class="btn btn-warning text-dark btn-sm px-3 py-2" href="#admission">
+            <i class="bi bi-pencil-square"></i> Admission Now
           </a>
         </li>
+        <!-- Login Button -->
+       <li class="nav-item ms-lg-3">
+  <a class="btn btn-outline-light border-2 text-white btn-sm px-3 gmmm-login-btn" href="registration.html">
+    <i class="bi bi-box-arrow-in-right"></i> Login
+  </a>
+</li>
+
+
 
       
 
@@ -89,11 +142,17 @@
 <div id="notices" class="container my-5">
   <div class="notice-board">
     <h4><i class="bi bi-megaphone"></i> Notice Board</h4>
-    <ul>
-      <li>📌 Library timing: 6 AM – 11 PM</li>
-      <li>📌 New batch starts from 1st Feb</li>
-      <li>📌 ID card mandatory</li>
-    </ul>
+
+    <div class="notice-slider-wrapper">
+      <ul class="notice-slider">
+        <li>📌 Library timing: 6 AM – 11 PM</li>
+        <li>📌 New batch starts from 1st Feb</li>
+        <li>📌 ID card mandatory</li>
+        <li>📌 Sunday special mock test</li>
+      </ul>
+
+    
+    </div>
   </div>
 </div>
 
@@ -177,12 +236,13 @@
         <ul class="footer-links">
           <li><a href="#zones">Zones</a></li>
           <li><a href="#login">Login</a></li>
+          <li><a href="#aboutus">About Us</a></li>
         </ul>
       </div>
 
     <!-- Contact -->
-<div class="footer-contact-section col-md-4 mb-4">
-  <h5 class="footer-titlee">Contact with Us</h5>
+<div class="footer-contact-section col-md-4 mb-4  ">
+  <h5 class="footer-titlee ">Contact</h5>
 
  <p class="footer-contact-item">
   <i class="bi bi-telephone-fill">

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Coin</title>
+
+  <link rel="stylesheet" href="home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f5f5f5;
+      font-family: 'Segoe UI';
+    }
+    .coin-card {
+        margin-top: 50px;
+      border-radius: 15px;
+      padding: 25px;
+      background: rgb(229, 236, 239);
+      box-shadow: 0 8px 25px rgba(221, 210, 210, 0.878);
+   
+    }
+     .dropdown-menu .dropdown-item.active {
+    background-color:blue;
+    color: white;
+    font-weight: 600;
+  }
+  .dropdown-menu .dropdown-item:hover {
+  background-color:blue!important; /* light yellow hover */
+  color: white !important;
+}
+
+    .coin-icon-big {
+      font-size: 55px;
+      color: #f7c600;  /* Gold color */
+    }
+    .info-title {
+      color: #333;
+      font-weight: 600;
+    }
+    .coin-count {
+      font-size: 32px;
+      color: #f7c600;
+      font-weight: bold;
+    }
+  /* Navbar Active Link */
+  .navbar .nav-link.active {
+    color: blue !important;   /* yellow highlight */
+    font-weight: 600;
+  }
+  
+.navbar .nav-link:hover{
+   color: blue 
+}
+  
+
+  </style>
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark gm-navbar fixed-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="gmlibrary.png" alt="GM Library" height="40" class="me-2">
+     
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#gmNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="gmNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center ">
+
+        <li class="nav-item">
+          <a class="nav-link  " href="index.html">Home</a>
+        </li>
+
+     <li class="nav-item">
+          <a class="nav-link " href="#zone">Zones</a>
+        </li>
+
+<li class="nav-item dropdown">
+  <a class="nav-link active dropdown-toggle" href="#" id="dashboardDropdown" data-bs-toggle="dropdown">
+    Dashboard
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dashboardDropdown">
+    <li><a class="dropdown-item" href="mycoin.html">My Coins</a></li>
+    <li><a class="dropdown-item" href="mycoupon.html">My Coupon</a></li>
+    <li><a class="dropdown-item" href="#bookinglist">Booking List</a></li>
+    <li><a class="dropdown-item" href="#bookinghistory">Booking History</a></li>
+  </ul>
+</li>
+
+
+<!-- Admission Button (NEW) -->
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-warning text-dark btn-sm px-3 py-2" href="#admission">
+            <i class="bi bi-pencil-square"></i> Admission Now
+          </a>
+        </li>
+        <!-- Login Button -->
+       <li class="nav-item ms-lg-3">
+  <a class="btn btn-outline-light border-2 text-white btn-sm px-3 gmmm-login-btn" href="registration.html">
+    <i class="bi bi-box-arrow-in-right"></i> Login
+  </a>
+</li>
+
+
+
+      
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+
+      <div class="coin-card text-center">
+
+        <!-- Normal Coin Icon -->
+        <i class="bi bi-coin coin-icon-big"></i>
+
+        <h3 class="mt-3">My Coin</h3>
+
+        <hr>
+
+        <div class="text-start mt-3">
+          <p class="info-title">Name:</p>
+          <h5 id="userName">Rohan Kumar</h5>
+
+          <p class="info-title mt-3">Mobile Number:</p>
+          <h5 id="userMobile">+91 3452772210</h5>
+
+          <p class="info-title mt-3">Available Coins:</p>
+          <h4 class="coin-count">
+            <i class="bi bi-coin"></i> 250
+          </h4>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="gm-footer">
+  <div class="container py-5">
+
+    <div class="row text-center text-md-start">
+
+      <!-- Logo & Social -->
+      <div class="col-md-4 mb-4">
+        <img src="gmlibrary.png" height="70" alt="GM Library">
+        <h6 class="mt-3">FOLLOW US</h6>
+        <div class="footer-social mt-2">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">Quick links</h5>
+        <ul class="footer-links">
+          <li><a href="#zones">Zones</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+        </ul>
+      </div>
+
+    <!-- Contact -->
+<div class="footer-contact-section col-md-4 mb-4  ">
+  <h5 class="footer-titlee ">Contact</h5>
+
+ <p class="footer-contact-item">
+  <i class="bi bi-telephone-fill">
+  <a href="https://wa.me/916200013102" target="_blank" class="footer-whatsapp-link"></i>
+    +91 6200013102
+  </a>
+</p>
+
+  <p class="footer-contact-item">
+    <i class="bi bi-envelope-fill">
+    <a href="mailto:gmlib2025@gmail.com" class="footer-email-link"></i> 
+      gmlib2025@gmail.com
+    </a>
+  </p>
+</div>
+
+
+    </div>
+
+    <hr>
+
+    <!-- Bottom Row -->
+    <div class="footer-bottom text-center">
+      <a href="#">Terms & Conditions</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Refund Policy</a>
+
+      <p class="mt-2">Developed By GM Code Labs</p>
+    </div>
+
+  </div>
+ 
+</footer>
+<script>
+  // Get current page file name
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Dropdown Pages List
+  const dashboardPages = [
+    "mycoin.html",
+    "mycoupon.html",
+    "bookinglist.html",
+    "bookinghistory.html"
+  ];
+
+  // Highlight child link
+  document.querySelectorAll(".dropdown-menu .dropdown-item").forEach(item => {
+    if (item.getAttribute("href") === currentPage) {
+      item.classList.add("active");
+    }
+  });
+
+  // If any dashboard page is active → highlight parent "Dashboard"
+  if (dashboardPages.includes(currentPage)) {
+    document.getElementById("dashboardDropdown").classList.add("active");
+  }
+</script>
+
+</body>
+</html>
